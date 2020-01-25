@@ -29,6 +29,9 @@ public class DukeProcessor {
             case "list":
                 command = createCommand(CommandType.LIST);
                 break;
+            case "liston":
+                command = createCommand(CommandType.LISTON);
+                break;
             case "done":
                 command = createCommand(CommandType.DONE);
                 break;
@@ -92,6 +95,9 @@ public class DukeProcessor {
                 break;
             case DELETE:
                 command = new CommandDelete();
+                break;
+            case LISTON:
+                command = new CommandListOn();
                 break;
             default:
                 command = new CommandInvalid();
